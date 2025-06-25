@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akanksha Maurya - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a11cb;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, I'm Akanksha Maurya</h1>
-  <p>WordPress Developer | HTML | CSS | JavaScript | PHP</p>
+  <header>
+    <h1>Akanksha Maurya</h1>
+    <p>WordPress Developer | HTML | CSS | JavaScript | PHP</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Adventures Overland</h3>
+        <p>Luxury road trips website built using WordPress and custom PHP components.</p>
+        <a href="https://adventuresoverland.com" target="_blank">Visit site</a>
+      </div>
+      <div class="project-card">
+        <h3>AO Experiences</h3>
+        <p>Experience portal for unique curated travel plans, built in WordPress with modern UI design.</p>
+        <a href="https://aoexperiences.com" target="_blank">Visit site</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:akankshawhyshy@gmail.com">akankshawhyshy@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/softwaredeveloper936" target="_blank">@softwaredeveloper936</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Akanksha Maurya. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
